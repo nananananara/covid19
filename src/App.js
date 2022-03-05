@@ -11,7 +11,7 @@ function App() {
     await axios.get("https://api.corona-19.kr/korea/beta/?serviceKey=QJBkDZGUmrIdf6wNicoqzuWEP21H3nSAs")
       .then((result)=>{
         setbeta(result.data);
-        console.log(result.data);
+        //console.log(result.data);
       })
       .catch(()=>{
         console.log("실패");
@@ -23,7 +23,7 @@ function App() {
     await axios.get("https://api.corona-19.kr/korea/?serviceKey=QJBkDZGUmrIdf6wNicoqzuWEP21H3nSAs")
       .then((result)=>{
         setcity(result.data);
-        console.log(result.data);
+        //console.log(result.data);
       })
       .catch(()=>{
         console.log("실패");
